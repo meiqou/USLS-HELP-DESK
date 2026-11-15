@@ -1,0 +1,1303 @@
+{
+    "date": "2026-11-11 15:53",
+    "total": 216,
+    "failed": 2,
+    "results": [
+        {
+            "section": "Password hashing",
+            "name": "Passwords are hashed with Argon2id",
+            "passed": true,
+            "detail": "$argon2id$v=19$m=65536,t=4,p=1..."
+        },
+        {
+            "section": "Password hashing",
+            "name": "Correct password verifies",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password hashing",
+            "name": "Wrong password is rejected",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password hashing",
+            "name": "Every hash has its own random salt",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password hashing",
+            "name": "Pepper is required (raw password does not match the stored hash)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password hashing",
+            "name": "Old bcrypt hashes are still accepted and flagged for upgrade",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password hashing",
+            "name": "Plain text is never stored (hash is not the password)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password policy",
+            "name": "Rejects short passwords",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password policy",
+            "name": "Rejects passwords without an uppercase letter",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password policy",
+            "name": "Rejects passwords without a symbol",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password policy",
+            "name": "Rejects common passwords such as \"Password123!!\"",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password policy",
+            "name": "Rejects passwords containing the username",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password policy",
+            "name": "Rejects long runs of one character",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password policy",
+            "name": "Accepts a strong password",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor (TOTP, RFC 6238)",
+            "name": "RFC 6238 test vector at T=59 gives 287082",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor (TOTP, RFC 6238)",
+            "name": "RFC 6238 test vector at T=1111111109 gives 081804",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor (TOTP, RFC 6238)",
+            "name": "A current code is accepted",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor (TOTP, RFC 6238)",
+            "name": "A replayed code is rejected",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor (TOTP, RFC 6238)",
+            "name": "A code from 5 minutes ago is rejected",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor (TOTP, RFC 6238)",
+            "name": "Non-numeric input is rejected",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Encryption (AES-256-GCM)",
+            "name": "Encrypt then decrypt returns the original",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Encryption (AES-256-GCM)",
+            "name": "Ciphertext does not contain the secret",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Encryption (AES-256-GCM)",
+            "name": "Tampered ciphertext is detected and refused",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authorization rules and input handling",
+            "name": "Students can file tickets but not manage them",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authorization rules and input handling",
+            "name": "Technicians manage tickets but not users",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authorization rules and input handling",
+            "name": "Administrators can manage users and read the audit log",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authorization rules and input handling",
+            "name": "Unknown roles get no permissions",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authorization rules and input handling",
+            "name": "Output escaping neutralises HTML",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authorization rules and input handling",
+            "name": "Redirect targets outside the app are refused",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authorization rules and input handling",
+            "name": "Ticket validation rejects unknown categories and priorities",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "HTTP security headers and file protection",
+            "name": "Content-Security-Policy blocks inline and third-party scripts",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "HTTP security headers and file protection",
+            "name": "X-Frame-Options: DENY (clickjacking)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "HTTP security headers and file protection",
+            "name": "X-Content-Type-Options: nosniff",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "HTTP security headers and file protection",
+            "name": "Referrer-Policy is set",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "HTTP security headers and file protection",
+            "name": "Pages are not cached (Cache-Control: no-store)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "HTTP security headers and file protection",
+            "name": "PHP version is not advertised (no X-Powered-By)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "HTTP security headers and file protection",
+            "name": "Session cookie is HttpOnly",
+            "passed": true,
+            "detail": "USLS_HD_SID=68nf23plp98ar4tsap7dleo0b6; path=\/; HttpOnly; SameSite=Strict"
+        },
+        {
+            "section": "HTTP security headers and file protection",
+            "name": "Session cookie is SameSite=Strict",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "HTTP security headers and file protection",
+            "name": "Private file is not reachable: \/..\/src\/bootstrap.php",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "HTTP security headers and file protection",
+            "name": "Private file is not reachable: \/..\/config\/secrets.php",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "HTTP security headers and file protection",
+            "name": "Private file is not reachable: \/config\/secrets.php",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "HTTP security headers and file protection",
+            "name": "Private file is not reachable: \/src\/Security\/Secrets.php",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "HTTP security headers and file protection",
+            "name": "Private file is not reachable: \/..\/database\/schema.sql",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Registration",
+            "name": "Weak password is rejected on the server",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Registration",
+            "name": "Mismatched confirmation is rejected",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Registration",
+            "name": "Invalid username and e-mail are rejected",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Registration",
+            "name": "Strong password creates the account",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Registration",
+            "name": "A forged \"role=admin\" field is ignored (new accounts are always students)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Registration",
+            "name": "Stored password is an Argon2id hash",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Registration",
+            "name": "Duplicate username is rejected",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "CSRF protection",
+            "name": "Sign-in without a CSRF token is refused (400)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "CSRF protection",
+            "name": "Sign-in with a forged CSRF token is refused (400)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "CSRF protection",
+            "name": "Registration without a CSRF token is refused (400)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "CSRF protection",
+            "name": "POST dashboard.php without a token is refused (400)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "CSRF protection",
+            "name": "POST account.php without a token is refused (400)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "CSRF protection",
+            "name": "POST logout.php without a token is refused (400)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "CSRF protection",
+            "name": "POST my_tickets.php without a token is refused (400)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "CSRF protection",
+            "name": "No ticket was created by the forged request",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authentication",
+            "name": "Wrong password shows a generic message",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authentication",
+            "name": "Unknown username shows the identical message (no account enumeration)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authentication",
+            "name": "Sign-in with e-mail address works",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authentication",
+            "name": "SQL injection in the sign-in form does not log in",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authentication",
+            "name": "Deactivated accounts cannot sign in, and the reply does not confirm the password",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authentication",
+            "name": "A 400-character username is handled safely",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authentication",
+            "name": "A username with invalid UTF-8 bytes is handled safely (no error page)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authentication",
+            "name": "Wrong password and unknown user take the same time (no timing enumeration)",
+            "passed": true,
+            "detail": "ratio 1.09"
+        },
+        {
+            "section": "Authentication",
+            "name": "Account with an old bcrypt hash can still sign in",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authentication",
+            "name": "Old hash is upgraded to Argon2id on sign-in",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authentication",
+            "name": "Planted session IDs are refused (strict mode)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authentication",
+            "name": "A new session ID is issued at sign-in (fixation defence)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authentication",
+            "name": "A stolen session cookie used from another browser is rejected",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authentication",
+            "name": "Visiting logout.php with GET does not sign out (CSRF-safe)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Authentication",
+            "name": "POST logout ends the session",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Brute-force protection",
+            "name": "After 5 failures even the correct password is refused",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Brute-force protection",
+            "name": "Lockout is written to the audit log",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Brute-force protection",
+            "name": "Non-existent accounts lock out the same way (no enumeration)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Brute-force protection",
+            "name": "An administrator can clear the lockout",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Role-based access control (every page, every role)",
+            "name": "dashboard.php        student 200, technician 302, admin 302",
+            "passed": true,
+            "detail": "got 200\/302\/302"
+        },
+        {
+            "section": "Role-based access control (every page, every role)",
+            "name": "my_tickets.php       student 200, technician 403, admin 403",
+            "passed": true,
+            "detail": "got 200\/403\/403"
+        },
+        {
+            "section": "Role-based access control (every page, every role)",
+            "name": "account.php          student 200, technician 200, admin 200",
+            "passed": true,
+            "detail": "got 200\/200\/200"
+        },
+        {
+            "section": "Role-based access control (every page, every role)",
+            "name": "admin_dashboard.php  student 403, technician 200, admin 200",
+            "passed": true,
+            "detail": "got 403\/200\/200"
+        },
+        {
+            "section": "Role-based access control (every page, every role)",
+            "name": "admin_tickets.php    student 403, technician 200, admin 200",
+            "passed": true,
+            "detail": "got 403\/200\/200"
+        },
+        {
+            "section": "Role-based access control (every page, every role)",
+            "name": "manage_users.php     student 403, technician 403, admin 200",
+            "passed": true,
+            "detail": "got 403\/403\/200"
+        },
+        {
+            "section": "Role-based access control (every page, every role)",
+            "name": "audit_log.php        student 403, technician 403, admin 200",
+            "passed": true,
+            "detail": "got 403\/403\/200"
+        },
+        {
+            "section": "Role-based access control (every page, every role)",
+            "name": "Visitors are sent to the sign-in page from every protected page",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Role-based access control (every page, every role)",
+            "name": "Denied requests are recorded as access_denied",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Role-based access control (every page, every role)",
+            "name": "The 403 page also carries the security headers",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Tickets: validation, XSS, SQL injection and ownership",
+            "name": "A valid ticket is created",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Tickets: validation, XSS, SQL injection and ownership",
+            "name": "Invalid category, priority and lengths are rejected",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Tickets: validation, XSS, SQL injection and ownership",
+            "name": "Stored XSS payload is escaped on My tickets",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Tickets: validation, XSS, SQL injection and ownership",
+            "name": "Stored XSS payload is escaped in the technician queue",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Tickets: validation, XSS, SQL injection and ownership",
+            "name": "SQL injection in search and filters is harmless",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Tickets: validation, XSS, SQL injection and ownership",
+            "name": "Another student cannot withdraw someone else's ticket (IDOR)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Tickets: validation, XSS, SQL injection and ownership",
+            "name": "Other students do not see the ticket in their list",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Tickets: validation, XSS, SQL injection and ownership",
+            "name": "Invalid status values are refused",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Tickets: validation, XSS, SQL injection and ownership",
+            "name": "Technician can claim a ticket (assigned and moved to In Progress)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Tickets: validation, XSS, SQL injection and ownership",
+            "name": "Technician can resolve a ticket",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Tickets: validation, XSS, SQL injection and ownership",
+            "name": "A ticket already being handled cannot be withdrawn",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Tickets: validation, XSS, SQL injection and ownership",
+            "name": "A student can withdraw their own open ticket",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Account administration",
+            "name": "Role change is saved",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Account administration",
+            "name": "The user is signed out immediately after a role change",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Account administration",
+            "name": "Unknown roles are refused",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Account administration",
+            "name": "Deactivating an account ends its open sessions",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Account administration",
+            "name": "A deactivated account cannot sign back in",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Account administration",
+            "name": "An administrator cannot delete their own account",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Account administration",
+            "name": "An administrator cannot demote themselves",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Account administration",
+            "name": "Admin setup script refuses an e-mail that belongs to another account",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Account administration",
+            "name": "A technician cannot use admin actions (forged POST is refused)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Step-up authentication and redirects",
+            "name": "User management asks for the password again after the step-up window",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Step-up authentication and redirects",
+            "name": "A wrong confirmation password is refused",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Step-up authentication and redirects",
+            "name": "The correct password unlocks the page",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Step-up authentication and redirects",
+            "name": "Redirects to other websites are refused (open redirect)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password change",
+            "name": "Wrong current password is refused",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password change",
+            "name": "A weak new password is refused",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password change",
+            "name": "Password is changed",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password change",
+            "name": "The current session stays signed in",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password change",
+            "name": "Other devices are signed out",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password change",
+            "name": "The old password no longer works",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password change",
+            "name": "The new password works",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Password change",
+            "name": "Guessing the current password on the account page is limited (session ends)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "Starting 2FA setup requires the correct password",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "A 160-bit setup key is shown",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "A wrong setup code does not enable 2FA",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "2FA is enabled with a valid code",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "8 recovery codes are shown once",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "The 2FA secret is encrypted in the database",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "2FA cannot be silently replaced while it is on",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "Recovery codes are stored hashed",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "Password alone now leads to the verification step",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "Protected pages stay locked until the code is entered",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "A wrong code is refused",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "A code that was already used is refused (replay protection)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "A fresh code completes sign-in",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "A recovery code can be used instead",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "A recovery code works only once",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "Five wrong codes end the sign-in attempt",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "...and lock the account",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "Other half-finished sign-ins are blocked too, even with a correct code",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "A password change cancels half-finished sign-ins",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "A two-factor time step can be claimed only once (no race)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Two-factor authentication",
+            "name": "A recovery code can be consumed only once (no race)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Audit log integrity",
+            "name": "The untouched log verifies as intact",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Audit log integrity",
+            "name": "Security events are being recorded (122 so far)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Audit log integrity",
+            "name": "Editing a log row directly in the database is detected",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Session timeout",
+            "name": "Signed in",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Session timeout",
+            "name": "An idle session expires automatically",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Rate limits per network address",
+            "name": "Mass account creation from one address is blocked",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Rate limits per network address",
+            "name": "Password spraying across many accounts locks the address",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Names on accounts",
+            "name": "First and last name are required",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Names on accounts",
+            "name": "A name containing HTML is refused",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Names on accounts",
+            "name": "A password containing your name is refused",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Names on accounts",
+            "name": "Accented names, dots, dashes and apostrophes are accepted and stored",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Names on accounts",
+            "name": "The first name is used in the greeting",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Names on accounts",
+            "name": "Users can update their name (for accounts created before names existed)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Common passwords, attempts left and cooldown",
+            "name": "The sign-up form states the common-password rule before submitting",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Common passwords, attempts left and cooldown",
+            "name": "The list given to the browser is the list the server enforces",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Common passwords, attempts left and cooldown",
+            "name": "A common word with symbols and numbers added is still refused",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Common passwords, attempts left and cooldown",
+            "name": "A wrong password shows how many attempts are left",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Common passwords, attempts left and cooldown",
+            "name": "An unknown username shows the same count (no account enumeration)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Common passwords, attempts left and cooldown",
+            "name": "The count reaches 1 attempt (singular)",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Common passwords, attempts left and cooldown",
+            "name": "The attempt that reaches the limit starts a cooldown with seconds remaining",
+            "passed": true,
+            "detail": "898"
+        },
+        {
+            "section": "Common passwords, attempts left and cooldown",
+            "name": "The cooldown counts down (5 minutes later about 10 minutes remain)",
+            "passed": true,
+            "detail": "598"
+        },
+        {
+            "section": "Common passwords, attempts left and cooldown",
+            "name": "Wrong current password shows attempts left",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Required two-factor (the default configuration)",
+            "name": "Signing in without two-factor goes to the required setup",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Required two-factor (the default configuration)",
+            "name": "No page can be reached until setup is finished",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Required two-factor (the default configuration)",
+            "name": "The setup page shows a setup key",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Required two-factor (the default configuration)",
+            "name": "A wrong code does not finish setup",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Required two-factor (the default configuration)",
+            "name": "A correct code finishes setup and signs the user in",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Required two-factor (the default configuration)",
+            "name": "Recovery codes are shown right after setup",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Required two-factor (the default configuration)",
+            "name": "The app is now fully usable",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Required two-factor (the default configuration)",
+            "name": "The next sign-in asks for a code, not setup",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Required two-factor (the default configuration)",
+            "name": "Removing a device needs a valid code as well as the password",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Required two-factor (the default configuration)",
+            "name": "Moving to a new device signs the user out",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Required two-factor (the default configuration)",
+            "name": "Two-factor cannot stay off: the next sign-in requires setup again",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Required two-factor (the default configuration)",
+            "name": "The setup key cannot be read with a stolen cookie from another browser",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Cooldown ends on time (default configuration)",
+            "name": "The cooldown blocks even the correct password",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Cooldown ends on time (default configuration)",
+            "name": "After the cooldown the correct password works again",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "QR code",
+            "name": "The setup page gives the QR code the same key as the text",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "QR code",
+            "name": "The QR library is served from this site, not an outside service",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "QR code",
+            "name": "The QR library file is reachable",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "The sign-in page links to password recovery",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "Password recovery sends a code and does not reveal whether the address exists",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "Password reset codes are sent to the account e-mail",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "Password reset codes are stored as hashes",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "An incorrect reset code is rejected",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "A valid code resets the password and returns to sign-in",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "The reset password works and the old password no longer works",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "Five incorrect reset codes lock further reset attempts",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "E-mail is offered as a choice when a mail server is set up",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "The page shows only part of the address",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "A guessed code fails before any code has been sent",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "Asking for a code sends one e-mail",
+            "passed": false,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "The e-mail goes to the address on the account",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "The code is stored only as a hash",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "Asking again immediately is refused (flood protection)",
+            "passed": false,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "The correct code finishes setup and signs the user in",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "A second browser cannot finish the same setup with the used code",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "Recovery codes are shown after e-mail setup too",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "The account page names the e-mail method",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "Signing in straight after setup still e-mails a code and asks for it",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "Protected pages stay locked until the code is entered",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "A wrong code is refused and shows attempts left",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "The correct code signs in",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "Signing in again within a minute sends no extra e-mail and shows no error",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "A used code cannot be replayed",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "An expired code is refused",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "Asking for a new code sends another e-mail",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "A new code cancels the previous one",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "A recovery code works in place of an e-mailed code",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "At most 5 e-mails an hour are sent",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "Five wrong e-mailed codes lock the account",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "Changing method without a code is refused",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "Changing method with the e-mailed code signs out and resets the choice",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "The user must choose a method again",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "E-mailed codes",
+            "name": "Header injection through the address is impossible",
+            "passed": true,
+            "detail": ""
+        },
+        {
+            "section": "Information leakage",
+            "name": "No PHP errors, warnings or stack traces in any response",
+            "passed": true,
+            "detail": ""
+        }
+    ]
+}
